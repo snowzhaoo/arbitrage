@@ -1,0 +1,30 @@
+{
+  "name": "arbitrage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@uniswap/sdk": "^1.0.0-beta.4",
+    "async": "^3.2.0",
+    "log4js": "^6.2.1"
+  },
+  "devDependencies": {
+    "@openzeppelin/cli": "^2.8.2",
+    "@openzeppelin/contracts": "^2.5.1",
+    "@openzeppelin/test-helpers": "^0.5.5",
+    "chai": "^4.2.0",
+    "eth-gas-reporter": "^0.2.17",
+    "mocha": "^7.1.2",
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=develop nodemon --watch '**/*.ts' --exec 'ts-node' ./src/index.ts",
+    "compile": "npx oz compile --solc-version=0.5.15 --optimizer on"
+  },
+  "author": "",
+  "license": "ISC"
+}
